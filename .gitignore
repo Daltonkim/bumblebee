@@ -1,0 +1,71 @@
+*.log
+
+/license.txt
+/sitemap.xml
+/sitemap.xml.gz
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.tgz
+*.map
+
+# Logs and databases #
+######################
+*.log
+*.sql
+
+# OS generated files #
+######################
+**.DS_Store*
+ehthumbs.db
+Thumbs.db
+._*
+
+# SASS #
+##########
+**/.sass-cache
+**/.sass-cache/*
+**/.map
+
+# Composer #
+##########
+vendors/composer/
+!assets/js/vendor/
+wpcs/
+composer.lock
+
+# Bower #
+##########
+bower_components
+
+# VSCode #
+##########
+.vscode/
+
+
+# NPM #
+##########
+/node_modules
+
+# Compiled Files and Build Dirs #
+##########
+/README.html
+/build/
+
+*.cson
+/assets/frontend/css/**/*.css
+/assets/frontend/js/main.js
+/assets/frontend/js/main.min.js
+
+
+assets/frontend/css/style.css
+assets/frontend/css/style.min.css
+assets/frontend/js/main.min.js
