@@ -3,12 +3,12 @@
  * This file is a part of the Radium Framework core.
  * Please be cautious editing this file,
  *
- * @category ngo
+ * @category tapona
  * @package  Energia
  * @author   Franklin Gitonga
  * @link     http://qazana.net/
  */
-namespace ngo;
+namespace tapona;
 
 if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly
@@ -58,7 +58,7 @@ class Frontend {
      */
     function enqueue_scripts() {
         wp_enqueue_script(
-            'ngo-on-off-canvas',
+            'tapona-on-off-canvas',
             get_stylesheet_directory_uri().'/assets/frontend/js/on-off-canvas.js',
             '',
             '1.0.0',
@@ -135,8 +135,8 @@ class Frontend {
      * @since 1.0.0
      */
     function enqueue_styles() {
-        wp_enqueue_style( 'ngo-frontend', get_stylesheet_directory_uri() . '/assets/frontend/css/style.css', '', '1.0.0', 'all' );
-        wp_enqueue_style( 'ngo-fonts', get_stylesheet_directory_uri() . '/assets/frontend/fonts/stylesheet.css', '', '1.0.0', 'all' );
+        wp_enqueue_style( 'tapona-frontend', get_stylesheet_directory_uri() . '/assets/frontend/css/style.css', '', '1.0.0', 'all' );
+        wp_enqueue_style( 'tapona-fonts', get_stylesheet_directory_uri() . '/assets/frontend/fonts/stylesheet.css', '', '1.0.0', 'all' );
     }
 
      /**
@@ -344,12 +344,12 @@ class Frontend {
         $config = array(
 
             // Menu name under Appearance.
-            'menu_name' => esc_html__( 'About ngo', 'ngo' ),
+            'menu_name' => esc_html__( 'About tapona', 'tapona' ),
             // Page title.
-            'page_name' => esc_html__( 'About ngo', 'ngo' ),
+            'page_name' => esc_html__( 'About tapona', 'tapona' ),
             // Main welcome title
             /* Translators: %s: theme name */
-            'welcome_title' => sprintf( esc_html__( 'Welcome to %s! - Version ', 'ngo' ), 'ngo' ),
+            'welcome_title' => sprintf( esc_html__( 'Welcome to %s! - Version ', 'tapona' ), 'tapona' ),
             // Main welcome content
             'welcome_content' => wp_get_theme()->get( 'Description' ),
     
@@ -360,37 +360,37 @@ class Frontend {
              * the will be the name of the function which will be used to render the tab content.
              */
             'tabs'                    => array(
-                'getting_started'     => esc_html__( 'Getting Started', 'ngo' ),
-                'recommended_actions' => esc_html__( 'Recommended Actions', 'ngo' ),
-                'recommended_plugins' => esc_html__( 'Useful Plugins','ngo' ),
-                'support'             => esc_html__( 'Support', 'ngo' ),
-                'changelog'           => esc_html__( 'Changelog', 'ngo' ),
+                'getting_started'     => esc_html__( 'Getting Started', 'tapona' ),
+                'recommended_actions' => esc_html__( 'Recommended Actions', 'tapona' ),
+                'recommended_plugins' => esc_html__( 'Useful Plugins','tapona' ),
+                'support'             => esc_html__( 'Support', 'tapona' ),
+                'changelog'           => esc_html__( 'Changelog', 'tapona' ),
             ),
             // Getting started tab
             'getting_started' => array(
                 'first' => array(
-                    'title'               => esc_html__( 'Go to Customizer','ngo' ),
-                    'text'                => esc_html__( 'Using the WordPress Customizer you can easily customize every aspect of the theme.','ngo' ),
-                    'button_label'        => esc_html__( 'Go to Customizer','ngo' ),
+                    'title'               => esc_html__( 'Go to Customizer','tapona' ),
+                    'text'                => esc_html__( 'Using the WordPress Customizer you can easily customize every aspect of the theme.','tapona' ),
+                    'button_label'        => esc_html__( 'Go to Customizer','tapona' ),
                     'button_link'         => esc_url( admin_url( 'customize.php' ) ),
                     'is_button'           => true,
                     'recommended_actions' => false,
                     'is_new_tab'          => true
                 ),
                 'second' => array (
-                    'title'               => esc_html__( 'Recommended actions','ngo' ),
-                    'text'                => esc_html__( 'We have compiled a list of steps for you, to take make sure the experience you will have using one of our products is very easy to follow.','ngo' ),
-                    'button_label'        => esc_html__( 'Recommended actions','ngo' ),
+                    'title'               => esc_html__( 'Recommended actions','tapona' ),
+                    'text'                => esc_html__( 'We have compiled a list of steps for you, to take make sure the experience you will have using one of our products is very easy to follow.','tapona' ),
+                    'button_label'        => esc_html__( 'Recommended actions','tapona' ),
                     'button_link'         => esc_url( admin_url( 'themes.php?page=analytica-welcome&tab=recommended_actions' ) ),
-                    'button_ok_label'     => esc_html__( 'You are good to go!','ngo' ),
+                    'button_ok_label'     => esc_html__( 'You are good to go!','tapona' ),
                     'is_button'           => false,
                     'recommended_actions' => true,
                     'is_new_tab'          => false
                 ),
                 'third' => array(
-                    'title'               => esc_html__( 'Read the documentation','ngo' ),
-                    'text'                => esc_html__( 'Need more details? Please check our full documentation for detailed information on how to use ngo.','ngo' ),
-                    'button_label'        => esc_html__( 'Documentation','ngo' ),
+                    'title'               => esc_html__( 'Read the documentation','tapona' ),
+                    'text'                => esc_html__( 'Need more details? Please check our full documentation for detailed information on how to use tapona.','tapona' ),
+                    'button_label'        => esc_html__( 'Documentation','tapona' ),
                     'button_link'         => 'https://qazana.net/docs-category/analytica/',
                     'is_button'           => false,
                     'recommended_actions' => false,
@@ -400,23 +400,23 @@ class Frontend {
 
             // Plugins array.
             'recommended_plugins'        => array(
-                'already_activated_message' => esc_html__( 'Already activated', 'ngo' ),
-                'version_label'             => esc_html__( 'Version: ', 'ngo' ),
-                'install_label'             => esc_html__( 'Install and Activate', 'ngo' ),
-                'activate_label'            => esc_html__( 'Activate', 'ngo' ),
-                'deactivate_label'          => esc_html__( 'Deactivate', 'ngo' ),
+                'already_activated_message' => esc_html__( 'Already activated', 'tapona' ),
+                'version_label'             => esc_html__( 'Version: ', 'tapona' ),
+                'install_label'             => esc_html__( 'Install and Activate', 'tapona' ),
+                'activate_label'            => esc_html__( 'Activate', 'tapona' ),
+                'deactivate_label'          => esc_html__( 'Deactivate', 'tapona' ),
                 'content'                   => array(
                 ),
             ),
             // Required actions array.
             'recommended_actions'        => array(
-                'install_label'    => esc_html__( 'Install and Activate', 'ngo' ),
-                'activate_label'   => esc_html__( 'Activate', 'ngo' ),
-                'deactivate_label' => esc_html__( 'Deactivate', 'ngo' ),
+                'install_label'    => esc_html__( 'Install and Activate', 'tapona' ),
+                'activate_label'   => esc_html__( 'Activate', 'tapona' ),
+                'deactivate_label' => esc_html__( 'Deactivate', 'tapona' ),
                 'content'          => array(
                     'kirki' => array(
                         'title'       => 'Kirki',
-                        'description' => __( 'It is highly recommended that you install Kirki so you can access more customizer options.', 'ngo' ),
+                        'description' => __( 'It is highly recommended that you install Kirki so you can access more customizer options.', 'tapona' ),
                         'check'       => class_exists( 'Kirki' ),
                         'plugin_slug' => 'kirki',
                         'id'          => 'kirki'
@@ -424,7 +424,7 @@ class Frontend {
 
                     'qazana' => array(
                         'title'       => 'Qazana',
-                        'description' => __( 'It is highly recommended that you install Qazana so you can access build more customizable pages.', 'ngo' ),
+                        'description' => __( 'It is highly recommended that you install Qazana so you can access build more customizable pages.', 'tapona' ),
                         'check'       => function_exists( 'qazana' ),
                         'plugin_slug' => 'qazana',
                         'id'          => 'qazana'

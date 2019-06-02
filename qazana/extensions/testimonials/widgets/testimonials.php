@@ -73,7 +73,7 @@ class Testimonials extends Widget_Base {
         $this->start_controls_section(
             'settings',
             [
-                'label' => __('Settings', 'ngo'),
+                'label' => __('Settings', 'tapona'),
             ]
         );
         
@@ -209,10 +209,10 @@ class Testimonials extends Widget_Base {
 				   </div>
 
 				   <div class="testimony__detail-image">
-					   <img src="<?php echo $image['url'];?>"alt="testimonial ngo">
+					   <img src="<?php echo $image['url'];?>"alt="testimonial tapona">
 					    <a href="<?php echo $link['url']; ?>" class="testimony__detail-button"  target=_blank>
 							<span> 
-								<?php _e( 'Lees Meer &nbsp;&nbsp;>', 'ngo' ); ?> 
+								<?php _e( 'Lees Meer &nbsp;&nbsp;>', 'tapona' ); ?> 
 							</span>
 						</a>
 				   </div>

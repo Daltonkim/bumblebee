@@ -33,13 +33,13 @@ if(process.argv[2] === "--local") {
 }
 
 // Project related.
-var project = "ngo"; // Project Name.
-var projectURL = "localhost/ngo"; // Project URL. Could be something like localhost:8888.
+var project = "tapona"; // Project Name.
+var projectURL = "localhost/tapona"; // Project URL. Could be something like localhost:8888.
 
 // Translation related.
-var textDomain = "ngo"; // Your textdomain here.
+var textDomain = "tapona"; // Your textdomain here.
 var translationFile = textDomain + ".pot"; // Name of the transalation file.
-var packageName = "ngo"; // Package name.
+var packageName = "tapona"; // Package name.
 var bugReport = "https://dlkim.co.ke/contact/"; // Where can users report bugs.
 var lastTranslator = "Daltom Kim <daltonkimpr@gmail.com>"; // Last translator Email ID.
 var team = "dlkim.co.ke <daltonkim@gmail.com.com>"; // Team's Email ID.
@@ -63,8 +63,8 @@ var imagesDestination = "assets/frontend/images/"; // Destination folder of opti
 var FrontendJSWatchFiles = [
 	"assets/frontend/js/modules/**/*.js",
 	"assets/extensions/**/*.js",
-	"!assets/frontend/js/ngo-editor.js",
-	"!assets/frontend/js/ngo-frontend.js",
+	"!assets/frontend/js/tapona-editor.js",
+	"!assets/frontend/js/tapona-frontend.js",
 ]; // Path to all vendor JS files.
 var AdminJSWatchFiles = "assets/admin/js/**/*.js"; // Path to all vendor JS files.
 

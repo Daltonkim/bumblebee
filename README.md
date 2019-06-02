@@ -1,4 +1,4 @@
-# ngo ![CI status](https://img.shields.io/badge/build-passing-brightgreen.svg)
+# tapona ![CI status](https://img.shields.io/badge/build-passing-brightgreen.svg)
 
 This is a child theme of Analytica WordPress Theme. This theme uses Qazana Builder for the layouts, Custom page Templates, it includes custom post types.
 
@@ -26,9 +26,9 @@ Download and install [Analytica](https://wordpress.org/themes/analytica/) Theme 
 This is the site's parent theme
 ```
 
-The next step is cloning the child theme (ngo) from the bitbucket repository
+The next step is cloning the child theme (tapona) from the bitbucket repository
 
-Once the ngo theme is cloned to your local machine, you need to run the *npm install* command (on the child theme's root folder) in order to install node modules.
+Once the tapona theme is cloned to your local machine, you need to run the *npm install* command (on the child theme's root folder) in order to install node modules.
 
 Once this is done all that's remaining is to run *gulp* command (on the child theme's root folder) and now you're ready to start coding!
 
