@@ -163,12 +163,12 @@ class Frontend {
 
         $primary = [
             'color' => '#000',
-            'font-family' => 'Prohibition',
+            'font-family' => 'Roboto Slab',
         ];
 
         $secondary = [
             'color' => '#000',
-            'font-family' => 'DIN 2014',
+            'font-family' => 'HK Grotesk',
         ];
 
         $options['site-layout']         = 'site-wide';
