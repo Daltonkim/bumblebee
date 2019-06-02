@@ -159,16 +159,16 @@ class Frontend {
      */
     function get_options( $options ) {
 
-        $accent_color = '#ffda00';
+        $accent_color = '#0274be';
 
         $primary = [
-            'color' => '#000',
-            'font-family' => 'Roboto Slab',
+            'color' => '#212121',
+            'font-family' => 'HK Grotesk',
         ];
 
         $secondary = [
-            'color' => '#000',
-            'font-family' => 'HK Grotesk',
+            'color' => '#212121',
+            'font-family' => 'Roboto Slab',
         ];
 
         $options['site-layout']         = 'site-wide';
@@ -245,22 +245,22 @@ class Frontend {
             'font-h1' => [
                 'font-family'    => $secondary['font-family'],
                 'variant'        => 'regular',
-                'font-size'      => '52px',
+                'font-size'      => '76px',
                 'font-weight'    => 'bold',
-                'line-height'    => '1.3',
-                'letter-spacing' => '-.05em',
+                'line-height'    => '1.47',
+                'letter-spacing' => '0',
                 'color'          => $secondary['color'],
-                'text-transform' => 'none',
+                'text-transform' => 'capitalize',
             ],
 
             'font-h2' => [
                 'font-family'    => $secondary['font-family'],
                 'variant'        => 'bold',
-                'font-size'      => '49px',
-                'line-height'    => '1.2',
+                'font-size'      => '50px',
+                'line-height'    => '1.68',
                 'letter-spacing' => '0',
                 'color'          => $secondary['color'],
-                'text-transform' => 'uppercase',
+                'text-transform' => 'capitalize',
             ],
 
             'font-h3' => [
@@ -270,7 +270,7 @@ class Frontend {
                 'line-height'    => '1.5',
                 'letter-spacing' => '0',
                 'color'          => $secondary['color'],
-                'text-transform' => 'none',
+                'text-transform' => 'capitalize',
             ],
 
             'font-h4' => [
@@ -280,7 +280,7 @@ class Frontend {
                 'line-height'    => '1.5',
                 'letter-spacing' => '0',
                 'color'          => $secondary['color'],
-                'text-transform' => 'none',
+                'text-transform' => 'capitalize',
             ],
 
             'font-h5' => [
@@ -290,7 +290,7 @@ class Frontend {
                 'line-height'    => '1.5',
                 'letter-spacing' => '0',
                 'color'          => $secondary['color'],
-                'text-transform' => 'none',
+                'text-transform' => 'capitalize',
             ],
 
             'font-h6' => [
@@ -300,7 +300,7 @@ class Frontend {
                 'line-height'    => '1.5',
                 'letter-spacing' => '0',
                 'color'          => $secondary['color'],
-                'text-transform' => 'none',
+                'text-transform' => 'capitalize',
             ],
 
             'font-em' => [
