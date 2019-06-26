@@ -33,8 +33,8 @@ if(process.argv[2] === "--local") {
 }
 
 // Project related.
-var project = "ngo"; // Project Name.
-var projectURL = "localhost/ngo"; // Project URL. Could be something like localhost:8888.
+var project = "Tapona"; // Project Name.
+var projectURL = "tapona.test"; // Project URL. Could be something like localhost:8888.
 
 // Translation related.
 var textDomain = "ngo"; // Your textdomain here.
