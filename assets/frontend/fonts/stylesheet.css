@@ -1,40 +1,31 @@
 @font-face {
-    font-family: 'DIN 2014';
-    src: url('DIN2014-Regular.woff2') format('woff2'),
-        url('DIN2014-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'DIN 2014';
-    src: url('DIN2014-Bold.woff2') format('woff2'),
-        url('DIN2014-Bold.woff') format('woff');
+    font-family: 'HK Grotesk';
+    src: url('hinted-HKGrotesk-Bold.woff2') format('woff2'),
+        url('hinted-HKGrotesk-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Prohibition';
-    src: url('Prohibition-Regular.woff2') format('woff2'),
-        url('Prohibition-Regular.woff') format('woff');
+    font-family: 'HK Grotesk';
+    src: url('hinted-HKGrotesk-Regular.woff2') format('woff2'),
+        url('hinted-HKGrotesk-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Prohibition';
-    src: url('Prohibition-Regular.woff2') format('woff2'),
-        url('Prohibition-Regular.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Roboto Slab';
+    src: url('RobotoSlab-Bold.ttf') format('ttf');
+    font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Prohibition';
-    src: url('Prohibition-Regular.woff2') format('woff2'),
-        url('Prohibition-Regular.woff') format('woff');
+    font-family: 'Roboto Slab';
+    src: url('RobotoSlab-Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
+
 
