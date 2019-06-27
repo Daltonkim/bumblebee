@@ -8,18 +8,38 @@
     margin: 0;
     padding: 0;
 
-     &__title {
+    &__title {
         position: relative;
-        font-size: 44px;
+        font-size: 72px;
         font-weight: bold;
         font-style: normal;
         font-stretch: normal;
-        line-height: normal;
+        line-height: 0.42;
         letter-spacing: normal;
         color: #ffffff;
         padding: 15%;
         margin: 0 auto;
         text-transform: uppercase;
-      
+        padding-bottom: 30px;
+    }
+
+    &__text {
+        font-family: 'HK Grotesk';
+        font-size: 24px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+        position: relative;
+        padding-bottom: 66px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    &__arrow {
+        padding-bottom: 20px;
     }
 }

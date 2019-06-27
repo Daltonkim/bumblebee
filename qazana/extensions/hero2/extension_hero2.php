@@ -1,14 +1,14 @@
 <?php
 namespace Qazana\Extensions;
 
-class Clients extends Base {
+class Hero2 extends Base {
     /**
      * Unique extension name
      *
      * @return string
      */
     public function get_name() {
-        return 'clients';
+        return 'hero2';
     }
 
     /**
@@ -17,7 +17,7 @@ class Clients extends Base {
      * @return string
      */
     public function get_title() {
-        return __( 'Clients', 'energia' );
+        return __( 'hero2', 'qazana' );
     }
 
     /**
@@ -27,7 +27,7 @@ class Clients extends Base {
 	 */
 	public function get_widgets() {
 		return [
-            'Clients',
+            'hero2',
         ];
 	}
 
