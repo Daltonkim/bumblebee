@@ -45,7 +45,7 @@ class Frontend {
     function include_files() {
         include('includes/slick.php');
         include('qazana/includes/controls.php');
-        // require_once ('includes/acf/fields.php');
+        require_once ('includes/functions/acf.php');
 
         include('includes/share.php'); //includes share links
     }
@@ -159,7 +159,7 @@ class Frontend {
      */
     function get_options( $options ) {
 
-        $accent_color = '#ffda00';
+        $accent_color = '#278fdc';
 
         $primary = [
             'color' => '#000',
