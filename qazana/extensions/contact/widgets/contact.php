@@ -89,7 +89,7 @@ class Contact extends Widget_Base {
 						<p>Buitenwatersloot 333</p>
 						<p>2614 GS Delft</p>
 						<p>+31 (0)15 219 54 54</p>
-						<p>info@ngo.nl</p>
+						<p>info@tapona.nl</p>
 					</div>
 				</div>
 

@@ -14,12 +14,12 @@
             <?php echo get_the_date('d/m/Y') ?>
         </div>
         <div class="blog__sport-next">
-            <?php _e( 'Sport Next', 'ngo' ); ?>
+            <?php _e( 'Sport Next', 'tapona' ); ?>
         </div>
         <div class="blog__yellow-background">
         </div>
             <div class="blog__blog-heading">
-                <?php _e( 'Blog', 'ngo' ); ?>
+                <?php _e( 'Blog', 'tapona' ); ?>
             </div>
 
     </div>
@@ -33,7 +33,7 @@
     </div>
     <a href="<?php the_permalink(); ?>" class="blog__btn">
         <span> 
-            <?php _e( 'Lees Meer &nbsp;&nbsp;>', 'ngo' ); ?> 
+            <?php _e( 'Lees Meer &nbsp;&nbsp;>', 'tapona' ); ?> 
         </span>
     </a>
 </div>

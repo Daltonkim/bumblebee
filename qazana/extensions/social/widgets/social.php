@@ -73,7 +73,7 @@ class Social extends Widget_Base {
         $this->start_controls_section(
             'settings',
             [
-                'label' => __('Settings', 'ngo'),
+                'label' => __('Settings', 'tapona'),
             ]
         );
         
@@ -164,9 +164,9 @@ class Social extends Widget_Base {
 				   </div>
 
 				   <div class="social__detail-image">
-					   <img src="<?php echo $image['url'];?>"alt="testimonial ngo">
+					   <img src="<?php echo $image['url'];?>"alt="testimonial tapona">
 					    <a href="<?php echo $link['url']; ?>" class="social__detail-button"  target=_blank>
-							<?php _e( 'Lees Meer &nbsp;&nbsp;>', 'ngo' ); ?> 
+							<?php _e( 'Lees Meer &nbsp;&nbsp;>', 'tapona' ); ?> 
 						</a>
 				   </div>
 				   <div class="social__detail-desc">
