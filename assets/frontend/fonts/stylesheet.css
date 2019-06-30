@@ -1,15 +1,13 @@
 @font-face {
     font-family: 'HK Grotesk';
-    src: url('hinted-HKGrotesk-Bold.woff2') format('woff2'),
-        url('hinted-HKGrotesk-Bold.woff') format('woff');
+    src: url('hinted-HKGrotesk-Bold.tff') format('tff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'HK Grotesk';
-    src: url('hinted-HKGrotesk-Regular.woff2') format('woff2'),
-        url('hinted-HKGrotesk-Regular.woff') format('woff');
+    src: url('hinted-HKGrotesk-Regular.tff') format('tff');
     font-weight: normal;
     font-style: normal;
 }

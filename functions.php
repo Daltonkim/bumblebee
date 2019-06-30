@@ -136,7 +136,7 @@ class Frontend {
      */
     function enqueue_styles() {
         wp_enqueue_style( 'ngo-frontend', get_stylesheet_directory_uri() . '/assets/frontend/css/style.css', '', '1.0.0', 'all' );
-        wp_enqueue_style( 'ngo-fonts', get_stylesheet_directory_uri() . '/assets/frontend/fonts/stylesheet.css', '', '1.0.0', 'all' );
+        // wp_enqueue_style( 'ngo-fonts', get_stylesheet_directory_uri() . '/assets/frontend/fonts/stylesheet.css', '', '1.0.0', 'all' );
     }
 
      /**
