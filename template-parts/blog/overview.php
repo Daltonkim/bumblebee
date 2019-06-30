@@ -3,37 +3,32 @@
 *   This template repalys the structure of the page to the Blog WP_Query
 */
 ?>
-<div class="blog__left">
-    <div class="blog__pic">
-        <?php if( get_field('blog_image') ): ?>
-            <img src="<?php the_field('blog_image'); ?>" />
-        <?php endif; ?>
-    </div>
-    <div class="blog__date-area">
-        <div class="blog__date">
-            <?php echo get_the_date('d/m/Y') ?>
-        </div>
-        <div class="blog__sport-next">
-            <?php _e( 'Sport Next', 'ngo' ); ?>
-        </div>
-        <div class="blog__yellow-background">
-        </div>
-            <div class="blog__blog-heading">
-                <?php _e( 'Blog', 'ngo' ); ?>
+<?php
+$image = get_field('featured_image');
+?>
+<div class="news__body">
+    <div class="news__content">
+        <a class="news__gsap"href="<?php the_permalink(); ?>">
+        <div class="news__wrapper" >
+                <div class="news__featured-image" style="background-image: url('<?php echo $image ?>'); background-position:center center;background-size: cover; background-repeat: no-repeat;">
+                    <div class="news__hover-color">
+                        <div class="news__title-hover">
+                            <h1 class="news__title-text-hover"><?php echo get_the_title() ?></h1>
+                            <?php
+                                $categories = get_the_category();
+                                if ( ! empty( $categories ) ) { ?>
+                                <h2 class="news__title-text-category"> <?php echo esc_html( $categories[0]->name ); ?> </h2> 
+                                <?php
+                            }
+                            ?>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="news__title">
+                <h1 class="news__title-text"><?php echo get_the_title() ?></h1>
+            </div>
+        </a>
 
     </div>
-</div>
-<div class="blog__right">
-    <div class="blog__title">
-        <?php echo get_the_title() ?>
-    </div>
-    <div class="blog__excerpt">
-        <?php the_field('excerpt'); ?>
-    </div>
-    <a href="<?php the_permalink(); ?>" class="blog__btn">
-        <span> 
-            <?php _e( 'Lees Meer &nbsp;&nbsp;>', 'ngo' ); ?> 
-        </span>
-    </a>
 </div>
