@@ -1,0 +1,139 @@
+.news {
+    &__container {
+        display: flex;
+        position: relative;
+        width: 100%;
+        margin-top: 50px;
+
+        .slick-next::before {
+            content: url(../images/arrow1.png) !important;
+        }
+
+        .slick-prev::before {
+            content: url(../images/arrow1.png) !important;
+        }
+
+        .slick-prev {
+            left: -41px;
+            transform: rotateZ(90deg);
+            top: 39%;
+
+        }
+
+        .slick-next {
+            right: 3px;
+            transform: rotateZ(-90deg);
+        }
+    }
+
+    &__body {
+        position: relative;
+        width: 33%;
+    }
+
+    &__content {
+        position: relative;
+        display: flex;
+        width: 100%;
+    }
+
+    &__wrapper {
+        border-radius: 20px;
+
+        a {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        &:hover {
+            // background-color: #212121;
+        }
+    }
+
+    &__featured-image {
+        padding: 350px 165px 300px 165px;
+        border-radius: 20px;
+        position: relative;
+        z-index: 0 !important;
+    }
+
+    &__title {
+        position: relative;
+        width: 100%;
+        padding: 20px 0px 50px 0px;
+    }
+
+    &__title-hover {
+        position: absolute;
+        width: 100%;
+        left: 20px;
+        text-align: left;
+        padding-right: 108px;
+        top: 33%;
+    }
+
+    &__title-text {
+
+        font-family: 'Roboto Slab';
+        font-size: 24px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #212121;
+
+    }
+
+    &__title-text-hover {
+
+        font-family: 'Roboto Slab';
+        font-size: 24px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.29;
+        letter-spacing: normal;
+        color: #ffffff;
+        text-transform: capitalize;
+
+    }
+
+    &__title-text-category {
+        font-family: 'HK Grotesk';
+        font-size: 24px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.29;
+        letter-spacing: normal;
+        color: #ffffff;
+        text-transform: capitalize;
+        
+
+    }
+
+    &__hover-color {
+        top: 0;
+        border-radius: 4px;
+        background-color: rgba(115,175,186, 0);
+        position: absolute;
+        z-index: 9999 !important;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        border-radius: 20px;
+        &:hover {
+            top: 0;
+            border-radius: 4px;
+            background-color: rgba(115,175,186, 0.44);
+            position: absolute;
+            z-index: 9999 !important;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            border-radius: 20px;
+        }
+    }
+}

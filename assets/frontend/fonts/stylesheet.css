@@ -1,48 +1,29 @@
 @font-face {
-    font-family: 'Roboto Slab';
-    src: url('RobotoSlab-Regular.woff2') format('woff2'),
-        url('RobotoSlab-Regular.woff') format('woff');
+    font-family: 'HK Grotesk';
+    src: url('hinted-HKGrotesk-Bold.tff') format('tff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HK Grotesk';
+    src: url('hinted-HKGrotesk-Regular.tff') format('tff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Roboto Slab';
-    src: url('RobotoSlab-Bold.woff2') format('woff2'),
-        url('RobotoSlab-Bold.woff') format('woff');
+    src: url('RobotoSlab-Bold.ttf') format('ttf');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'HK Grotesk';
-    src: url('HKGrotesk-Regular.woff2') format('woff2'),
-        url('HKGrotesk-Regular.woff') format('woff');
+    font-family: 'Roboto Slab';
+    src: url('RobotoSlab-Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'HK Grotesk';
-    src: url('HKGrotesk-Bold.woff2') format('woff2'),
-        url('HKGrotesk-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'HK Grotesk';
-    src: url('HKGrotesk-Regular.woff2') format('woff2'),
-        url('HKGrotesk-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'HK Grotesk';
-    src: url('HKGrotesk-Bold.woff2') format('woff2'),
-        url('HKGrotesk-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
 
