@@ -1,0 +1,28 @@
+.hero2 {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+
+     &__title {
+         position: relative;
+        font-size: 44px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #000000;
+        text-transform: uppercase;
+        padding-bottom: 0;
+        background: white;
+        margin-right: 49%;
+        margin-left: 26%;
+        margin-top: 24%;
+      
+    }
+}

@@ -62,14 +62,14 @@ class Blog extends Widget_Base {
 		// WP_Query arguments
 		$args = array(
 			'post_type'              => 'post',
-			'posts_per_page'         => '1',
+			'posts_per_page'         => '-1',
 			'order'                  => 'DESC',
 		);
 
 		// The Query
 		$query = new WP_Query( $args );
-
-    	?><div class="blog__container">
+       
+    	?><div class="news__container">
 			<?php
 		
 			 if ( $query->have_posts() ) :
