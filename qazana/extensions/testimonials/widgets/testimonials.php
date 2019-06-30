@@ -17,7 +17,7 @@ use Qazana\Utils;
  *
  * @since 1.0.0
  */
-class Social extends Widget_Base {
+class Testimonials extends Widget_Base {
 
 	/**
 	 * Get widget name.
@@ -30,7 +30,7 @@ class Social extends Widget_Base {
 	 * @return string Widget name.
 	 */
 	public function get_name() {
-		return 'Social';
+		return 'Testimonials';
 	}
 
 	/**
@@ -44,7 +44,7 @@ class Social extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'social', 'qazana' );
+		return __( 'testimonials', 'qazana' );
 	}
 
 	/**
@@ -80,7 +80,7 @@ class Social extends Widget_Base {
 		$this->add_control(
 			'date',
 			[
-				'label' => __( 'Post Date', 'qazana' ),
+				'label' => __( 'title', 'qazana' ),
 				'type' => Controls_Manager::TEXT,
 				'dynamic' => [
 					'active' => true,
@@ -93,7 +93,7 @@ class Social extends Widget_Base {
 		$this->add_control(
 			'title',
 			[
-				'label' => __( 'Title', 'qazana' ),
+				'label' => __( 'title', 'qazana' ),
 				'type' => Controls_Manager::TEXT,
 				'dynamic' => [
 					'active' => true,
@@ -119,7 +119,20 @@ class Social extends Widget_Base {
 		$this->add_control(
             'image',
             [
-                'label' => __('Image', 'qazana'),
+                'label' => __('Image', 'energia'),
+                'type' => Controls_Manager::MEDIA,
+            ]
+		);
+		$this->add_control(
+            'quote',
+            [
+                'label' => __('open quote pic', 'energia'),
+                'type' => Controls_Manager::MEDIA,
+            ]
+		);	$this->add_control(
+            'quote2',
+            [
+                'label' => __('close quote pic', 'energia'),
                 'type' => Controls_Manager::MEDIA,
             ]
 		);
@@ -133,6 +146,32 @@ class Social extends Widget_Base {
 					'image_link' => 'custom',
 				],
 				'show_label' => false,
+			]
+		);
+		$this->add_control(
+			'quotetitle',
+			[
+				'label' => __( 'Quote section title', 'qazana' ),
+				'type' => Controls_Manager::TEXT,
+				'dynamic' => [
+					'active' => true,
+				],
+				
+				'placeholder' => __( ' e.g Making a difference with the power of sports!', 'qazana' ),
+				
+			]
+		);
+		$this->add_control(
+			'quotetext',
+			[
+				'label' => __( 'Quote section title', 'qazana' ),
+				'type' => Controls_Manager::TEXT,
+				'dynamic' => [
+					'active' => true,
+				],
+				
+				'placeholder' => __( ' e.g Hans willem dicke / managing director', 'qazana' ),
+				
 			]
 		);
         $this->end_controls_section();
@@ -150,29 +189,51 @@ class Social extends Widget_Base {
 		$settings = $this->get_settings_for_display();
 		$link = $this->get_settings('link');
 		$image = $this->get_settings('image');
+		$quote2 = $this->get_settings('quote2');
+		$quote = $this->get_settings('quote');
+		$quotetitle = $this->get_settings('quotetitle');
+		$quotetext= $this->get_settings('quotetext');
 
 		$title = $this->get_settings('title');
 		$date = $this->get_settings('date');
-		$desc = $this->get_settings('description'); ?>
+		$desc_3 = $this->get_settings('description'); ?>
 
-	<div class="social">
-            <div class="social__detail">
-			   <div class="social__detail-wrapper">
-				   <div class="social__detail-date-title">
+        
+
+	<div class="testimony">
+            <div class="testimony__detail">
+			   <div class="testimony__detail-wrapper">
+				   <div class="testimony__detail-date-title">
 					<p><?php echo $date;?></p>
 				   <p><?php echo $title;?></p>
 				   </div>
 
-				   <div class="social__detail-image">
+				   <div class="testimony__detail-image">
 					   <img src="<?php echo $image['url'];?>"alt="testimonial tapona">
-					    <a href="<?php echo $link['url']; ?>" class="social__detail-button"  target=_blank>
-							<?php _e( 'Lees Meer &nbsp;&nbsp;>', 'tapona' ); ?> 
+					    <a href="<?php echo $link['url']; ?>" class="testimony__detail-button"  target=_blank>
+							<span> 
+								<?php _e( 'Lees Meer &nbsp;&nbsp;>', 'tapona' ); ?> 
+							</span>
 						</a>
 				   </div>
-				   <div class="social__detail-desc">
-					   <p><?php echo $desc; ?></p>
+				   <div class="testimony__detail-desc">
+					   <p><?php echo $desc_3; ?></p>
 				   </div>
 			   </div>
+		    </div>
+    
+		
+            <div class="testimony__quote">
+				<div class="testimony__quote-wrapper">
+				<div class="testimony__quote-open">
+					<img src="<?php echo $quote['url'];?>" alt="quote">
+				</div>
+					<div class="testimony__quote-title"><h1><?php echo $quotetitle;?></h1></div>
+					<div class="testimony__quote-undertext"><p><?php echo $quotetext;?><p></div>
+					<div class="testimony__quote-close">
+					<img src="<?php echo $quote2['url'];?>" alt="quote">
+					</div>
+				</div>
 		    </div>
     </div>
         <?php

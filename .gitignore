@@ -69,3 +69,4 @@ bower_components
 assets/frontend/css/style.css
 assets/frontend/css/style.min.css
 assets/frontend/js/main.min.js
+package-lock.json

@@ -75,7 +75,7 @@ class History extends Widget_Base {
         $this->start_controls_section(
             'settings',
             [
-                'label' => __('Settings', 'ngo'),
+                'label' => __('Settings', 'tapona'),
             ]
         );
         

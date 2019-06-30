@@ -29,12 +29,12 @@ jQuery(function ($) {
                 return '<a>0' + (i + 1) + '.</a>';
             },
             responsive: [{
-                    breakpoint: 1200,
+                    breakpoint: 1400,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
                         dots: true,
-                        arrows: false,
+                        arrows: true,
                         infinite: true,
 
 
