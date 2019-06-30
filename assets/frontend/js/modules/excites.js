@@ -2,8 +2,8 @@ jQuery(function ($) {
 
   $(window).ready(function (event) {
 
-    $(".excitement__card, .excitement__card-2, .testimony__detail-button, .excitement__card-3").hover(over, out);
-    $show = $(this).find('.title_1,.title_2 ,.title_3, .desc_1, .desc_2, .desc_3');
+    $(".excitement__card, .excitement__card-2, .testimony__detail-button, .excitement__card-3, news__gsap").hover(over, out);
+    $show = $(this).find('.title_1,.title_2 ,.title_3, .desc_1, .desc_2, .desc_3,news__hover-color, news__title-hover');
 
 
     $(".excitement__card").click(function () {
@@ -69,7 +69,12 @@ jQuery(function ($) {
       }, 0.1);
 
     });
-
+    
+    TweenMax.set($('.e'), {
+      y: 0
+    });TweenMax.set($('.excitement__line'), {
+      y: 0
+    });
     TweenMax.set($('.excitement__line'), {
       y: 0
     });
@@ -140,5 +145,10 @@ jQuery(function ($) {
       imghover.css("display", "none");
     }
   );
+
+
+
+  //news cards
+  
 
 });
