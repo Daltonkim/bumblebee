@@ -7,11 +7,11 @@ jQuery(function ($) {
             var ratio = $(this).width() / $(this).height();
             var pratio = $(this).parent().width() / $(this).parent().height();
             if (ratio < pratio) css = {
-                width: 'auto',
+                width: '30%',
                 height: '100%'
             };
             else css = {
-                width: '100%',
+                width: '30%',
                 height: 'auto'
             };
             $(this).css(css);
@@ -24,36 +24,41 @@ jQuery(function ($) {
             dots: true,
             swipe: true,
             draggable: true,
-            customPaging: function (slider, i) {
-                var thumb = $(slider.$slides[i]).data();
-                return '<a>0' + (i + 1) + '.</a>';
-            },
-            responsive: [{
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        dots: true,
-                        arrows: false,
-                        infinite: true,
+            infinite: true,
+            arrows: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+
+            // customPaging: function (slider, i) {
+            //     var thumb = $(slider.$slides[i]).data();
+            //     return '<a>0' + (i + 1) + '.</a>';
+            // },
+            // responsive: [{
+            //         breakpoint: 1400,
+            //         settings: {
+            //             slidesToShow: 3,
+            //             slidesToScroll: 3,
+            //             dots: true,
+            //             arrows: true,
+            //             infinite: true,
 
 
-                    }
-                },
-                {
-                    breakpoint: 1008,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        dots: true,
-                        arrows: false,
-                        infinite: true,
+            //         }
+            //     },
+            //     {
+            //         breakpoint: 1008,
+            //         settings: {
+            //             slidesToShow: 3,
+            //             slidesToScroll: 3,
+            //             dots: true,
+            //             arrows: false,
+            //             infinite: true,
 
 
-                    }
-                }
+            //         }
+            //     }
 
-            ]
+            // ]
 
 
         });
