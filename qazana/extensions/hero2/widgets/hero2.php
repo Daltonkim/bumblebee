@@ -115,7 +115,7 @@ class Hero2 extends Widget_Base {
 	 ?>
 
         
-		<div class="hero2" style="background-image: url('<?php echo $image['url']; ?>')">
+		<div id="bg" class="hero2" style="background-image: url('<?php echo $image['url']; ?>')">
 			<!-- <img src="<?php echo $image['url'];?>"alt="testimonial ngo" style="width:100%;"> -->
 			<div class="hero2__title"><?php echo $title ?></div>
 		</div>
