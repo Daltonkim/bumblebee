@@ -149,6 +149,8 @@ class Frontend {
         add_image_size('post-featured-image', 1920, 800, true); // post featured image
         add_image_size('related-post-image', 372, 372, true); // related post image
         add_image_size('post-slider-image', 1050, 700, true); // post slider image
+        add_image_size('our-work-images', 507, 567, true); // our-work
+
         remove_theme_support( 'custom-header', 'header-text', 'custom-background', 'automatic-feed-links', 'analytica-sidebars'  );
     }
 
