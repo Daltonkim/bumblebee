@@ -2,5 +2,22 @@
     border-width: 0;
     zoom: 2;
     padding: 40px 0;
-    background-color: #87e6ff !important; 
+}
+
+//  .qazana-inline-icon{
+//     span i{
+//         display: none;
+
+//     }
+// }
+a#arrow-our-work{
+    .fa.fa-glass::before{
+        display: block;
+        content: url('../../images/quote-down.png');
+        background-image: url('http://tapona.test/wp-content/uploads/2019/07/right-arrow.svg');
+        background-size: 28px 28px;
+        height: 28px;
+        width: 28px; 
+        margin-left: 15px;
+       }
 }

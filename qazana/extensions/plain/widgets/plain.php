@@ -17,7 +17,7 @@ use Qazana\Utils;
  *
  * @since 1.0.0
  */
-class Hero2 extends Widget_Base {
+class Plain extends Widget_Base {
 
 	/**
 	 * Get widget name.
@@ -30,7 +30,7 @@ class Hero2 extends Widget_Base {
 	 * @return string Widget name.
 	 */
 	public function get_name() {
-		return 'hero2';
+		return 'plain';
 	}
 
 	/**
@@ -44,7 +44,7 @@ class Hero2 extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'hero2', 'qazana' );
+		return __( 'plain', 'qazana' );
 	}
 
 	/**
@@ -73,7 +73,7 @@ class Hero2 extends Widget_Base {
         $this->start_controls_section(
             'settings',
             [
-                'label' => __('Settings', 'ngo'),
+                'label' => __('Settings', 'qazana'),
             ]
         );
         
@@ -97,6 +97,13 @@ class Hero2 extends Widget_Base {
                 'type' => Controls_Manager::MEDIA,
             ]
 		);
+		$this->add_control(
+            'arrow',
+            [
+                'label' => __('arrow_icon', 'energia'),
+                'type' => Controls_Manager::MEDIA,
+            ]
+		);
 		$this->end_controls_section();
     }
 
@@ -112,12 +119,16 @@ class Hero2 extends Widget_Base {
 		$settings = $this->get_settings_for_display();
 		$image = $this->get_settings('image');
 		$title = $this->get_settings('title');
+		$text = $this->get_settings('text');
+		$arrow = $this->get_settings('arrow');
+
+
 	 ?>
 
         
-		<div id="bg" class="hero2" style="background-image: url('<?php echo $image['url']; ?>')">
-			<!-- <img src="<?php echo $image['url'];?>"alt="testimonial ngo" style="width:100%;"> -->
-			<div class="hero2__title"><?php echo $title ?></div>
+		<div id="bg"class="hero" style="background-image: url('<?php echo $image['url']; ?>')">
+			<div class="hero__title-plain"><?php echo $title ?></div>
+			
 		</div>
         <?php
     }
