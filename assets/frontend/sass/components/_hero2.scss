@@ -2,11 +2,12 @@
     position: relative;
     text-align: center;
     color: white;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background-position: 50%;    background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
     padding: 0;
+  background-image:linear-gradient(rgba(0, 0, 0, .5), #1a1a1a),
+  url(https://images.unsplash.com/photo-1460378150801-e2c95cb65a50?crop=entropy&fit=crop&fm=jpg&h=775&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1400);
 
      &__title {
          position: relative;
