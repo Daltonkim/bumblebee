@@ -13,7 +13,7 @@ jQuery(function ($) {
             else css = {
                 width: '100%',
                 height: 'auto'
-            };
+            }; 
             $(this).css(css);
         }).on('load', function () {
             $(this).trigger('bestfit');
