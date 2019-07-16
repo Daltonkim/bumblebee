@@ -4,8 +4,11 @@
  */ 
 
 
-	 
- //WP_Query arguments
+?>
+<?php get_header(); ?>
+ <?php         
+ 
+      //WP_Query arguments
 		$args = array(
 			'post_type'              => 'post',
 			'posts_per_page'         => '-1',
@@ -15,13 +18,27 @@
 		// The Query
 		$query = new WP_Query( $args );
        
-    	?><div class="blogs__container">
+    	?><div class="stories__content">
 			<?php
 		
 			 if ( $query->have_posts() ) :
 				while ( $query->have_posts() ) : $query->the_post();
-					get_template_part( 'template-parts/blogtemplate/overview', null );
-				endwhile;
+                $image = get_field('featured_image');?>
+                <div class="stories__body">
+                        <div class="stories__image" style="background-image: url('<?php echo $image ?>'); background-position:center center;background-size: cover; background-repeat: no-repeat;">
+                        </div>
+                            <div class="stories__title">
+                                <h1 class="">
+                                    <?php echo get_the_title() ?>
+                                </h1>
+                            </div>
+                            <div class="stories__excerpt">
+                                    <p>afnklasnfklansklfalskfl</p>
+                            </div>
+                        <a href="<?php the_permalink(); ?>">
+                            <p class="stories__permalink-text">Read More</p>
+                        </a>
+                </div><?php				endwhile;
 			else :
 				// no posts found
 			endif;
@@ -29,5 +46,18 @@
 		</div><?php
 
 		// Restore original Post Data
-		 wp_reset_postdata();
-	
+         wp_reset_postdata();
+         ?>
+    
+    
+
+     <div class="wrapper">
+  <section class="content">
+    <div class="columns">
+      <aside class="sidebar-first">Sidebar first: Fixed width</aside>
+      <aside class="sidebar-second">Sidebar second: Fixed width</aside>
+      <aside class="sidebar-third">Sidebar second: Fixed width</aside>
+    </div>
+  </section>
+</div>
+<?php get_footer();
