@@ -1,13 +1,25 @@
-.blogs {
-    &__container {
+.stories {
+    &__content {
         position: relative;
         display: flex;
         width: 100%;
         padding: 20px;
-    }
-    &__body {
-        width: 33%;
-        padding: 10px;
+        margin-top: 200px;
     }
 
+    &__body {
+        width: 30%;
+        padding: 10px;
+        box-shadow: 0 25px 34px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    &__image {
+        padding: 20% 0 20% 0;
+
+    }
 }
+ body{
+    font-family: 'HK Grotesk' !important;
+
+ }
+
