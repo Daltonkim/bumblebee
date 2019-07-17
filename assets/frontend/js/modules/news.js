@@ -1,6 +1,31 @@
 jQuery(function ($) {
 
+
+    (function() {
+        'use strict';
+      
+        var btnScrollDown = document.querySelector('.down');
+      
+        function scrollDown() {
+          var windowCoords = document.documentElement.clientHeight;
+          (function scroll() {
+            if (window.pageYOffset < windowCoords) {
+              window.scrollBy(0, 10);
+              setTimeout(scroll, 0);
+            }
+            if (window.pageYOffset > windowCoords) {
+              window.scrollTo(0, windowCoords);
+            }
+          })();
+        }
+      
+        btnScrollDown.addEventListener('click', scrollDown);
+      })();
+      
+
     $(window).ready(function (event) {
+
+        
 
         $('img.eve-image').on('bestfit', function () {
             var css;
