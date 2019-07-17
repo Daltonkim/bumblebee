@@ -58,44 +58,16 @@ class Contact extends Widget_Base {
 	 */
 	public function render() { 
 		?>
-		
-		<div class="contact-section">
-			<div class="content">
-				<div class="playground">
-					<div class="title">playground. 333</div>
-				</div>
-
-				<div class="playground">
-					<h1>welcome to our playground.</h1>
-					<p>Lorem ipsum dolor sit amet, consecetadaring elit seda do eiusmod tempor incididunt uta labore et dolore magna se aliqua. Ut enim ad minim veniam, quis nostrud exercitationis ullamco laboris nisi ut aliquip ex ea comosale.</p>    
-				</div>
+	<div class="forms">
+		<div class="forms__subscribe">
+			<input type="email" class="forms__input" placeholder="Email"/>
 			</div>
+			<div class="forms__submit">
 
-			<div class="content">
-				<div class="img-wrapper">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/frontend/images/office.jpg" alt="Office">
-					<div class="title"><h1>Contact</h1></div>
-				</div>
-
-				<div class="clear"></div>
-
-				<div class="contact-info">
-					<div class="details">
-						<h1 class="hide">Contact</h1>
-					</div>
-
-					<div class="details">
-						<h3>Visit us</h3>
-						<p>Buitenwatersloot 333</p>
-						<p>2614 GS Delft</p>
-						<p>+31 (0)15 219 54 54</p>
-						<p>info@tapona.nl</p>
-					</div>
-				</div>
+			<input type="submit" class="forms__atag" value="Subscribe"/>
 
 			</div>
 		</div>
-
 		
 	<?php }
 

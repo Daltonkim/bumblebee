@@ -12,17 +12,18 @@
 
     }
 
-    &__content{
+    &__content {
         position: relative;
         text-align: center;
 
-        
+
     }
-    &__content span{
+
+    &__content span {
         position: relative;
         float: center;
 
-        
+
     }
 
     &__text {
@@ -45,8 +46,50 @@
 
     }
 
-    &__text .terms{
+    &__text .terms {
         display: none;
 
     }
+}
+
+.forms {
+    position: relative;
+    width: 100%;
+    display: flex;
+
+    &__subscribe {
+        width: 70%;
+    }
+
+    &__submit {
+        width: 30%;
+
+    }
+}
+
+input[type="email"].forms__input {
+    width: 100%;
+    border-radius: 4px !important;
+    background: #f9fcff !important;
+    border: none !important;
+}
+
+input[type="email"].forms__input::placeholder {
+    display: none;
+}
+
+input.forms__atag {
+    padding: 13px 26px !important;
+    border-radius: 7px !important;
+    margin-left: -15px;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.14;
+    letter-spacing: normal;
+    color: #ffffff;
+    background: #278fdc !important;
+    text-transform: uppercase;
+
 }
