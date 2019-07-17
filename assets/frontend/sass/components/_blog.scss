@@ -1,25 +1,84 @@
 .stories {
     &__content {
-        position: relative;
         display: flex;
+        flex-flow: row wrap;
         width: 100%;
         padding: 20px;
         margin-top: 200px;
     }
 
     &__body {
+        display: flex;
+        flex-flow: column;
         width: 30%;
-        padding: 10px;
         box-shadow: 0 25px 34px 0 rgba(0, 0, 0, 0.1);
+        margin: 0 auto;
+        margin-bottom: 57px;
     }
 
     &__image {
-        padding: 20% 0 20% 0;
+        padding: 44% 0 25% 0;
+    }
+
+    &__title h1 {
+        font-family: 'Roboto Slab';
+        font-size: 26px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.15;
+        letter-spacing: normal;
+        color: #1c2e3d;
+        text-transform: capitalize;
+    }
+
+    &__excerpt p {
+        font-family: 'HK Grotesk';
+        font-size: 20px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #1d2027;
+        margin-top: 28px;
+    }
+
+    &__permalink-text {
+        font-size: 18px;
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.88;
+        letter-spacing: normal;
+        text-align: right;
+        color: #278fdc;
+        text-transform: uppercase;
+    }
+
+    &__wrapper {
+        position: relative;
+        padding: 25px;
+    }
+}
+
+body {
+    font-family: 'HK Grotesk' !important;
+
+}
+
+
+.form {
+    position: relative;
+    width: 100%;
+    display: flex;
+
+    &__subscribe {
+        width: 70%;
+    }
+
+    &__submit {
+        width: 30%;
 
     }
 }
- body{
-    font-family: 'HK Grotesk' !important;
-
- }
-
