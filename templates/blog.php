@@ -50,14 +50,3 @@
          ?>
     
     
-
-     <div class="wrapper">
-  <section class="content">
-    <div class="columns">
-      <aside class="sidebar-first">Sidebar first: Fixed width</aside>
-      <aside class="sidebar-second">Sidebar second: Fixed width</aside>
-      <aside class="sidebar-third">Sidebar second: Fixed width</aside>
-    </div>
-  </section>
-</div>
-<?php get_footer();
