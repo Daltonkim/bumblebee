@@ -122,9 +122,7 @@ class Frontend {
      * 
      */
     function dequeue_scripts() {
-        wp_dequeue_script(
-            'analytica-navigation-mobile'
-        );
+     
         wp_dequeue_script(
             'analytica-frontend'
         );
