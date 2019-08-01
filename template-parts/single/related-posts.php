@@ -17,21 +17,6 @@
 
         // Initiate the custom query
         $custom_query = new WP_Query( $custom_query_args ); ?>
-
-        <div class="related-articles_heading">
-            <div class="related-articles_heading_content">
-                <div class="share-post">
-                    <?php share_buttons(); ?>
-                </div>
-            </div>
-
-            <div class="related-articles_heading_content">
-                <div class="related-articles_title">
-                    <h1>Bekijk meer.</h1>
-                </div>
-            </div>
-        </div>
-
         <div class="related-posts">
             <?php
             // Run the loop and output data for the results
@@ -39,24 +24,35 @@
             <?php while ( $custom_query->have_posts() ) : $custom_query->the_post(); ?>
 
                 <div class="related-posts_card">
-                    <div class="related-posts_card_img">
+                <div class="related-posts_card_content ">
                         <a href="<?php the_permalink(); ?>">
+                        <?php
+                           $categories = get_the_category();
+                            if ( ! empty( $categories ) ) { ?>
+                            <h2 class="story-category"> <?php echo esc_html( $categories[0]->name ); ?> </h2> 
                             <?php
-                                if ( has_post_thumbnail() ) {
-                                    the_post_thumbnail('related-post-image');
-                                }
-                                else {
-                                    echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/assets/frontend/images/news-background.jpg" />';
-                                }
+                            }
                             ?>
                         </a>
-                    </div>
-                    <div class="related-posts_card_content ">
-                        <a href="<?php the_permalink(); ?>">
+                        <a class="title-related" href="<?php the_permalink(); ?>">
                             <?php the_title(); ?>
                         </a>
-                        <p><?php the_field('tag_line'); ?></p>
+                      <span class="author-name"><p><?php the_author(); ?></p> | <p>
+                          
+                      <?php echo human_time_diff(get_the_time('U'), current_time('timestamp')).' ago'; ?>
+
+                    </p></span>
+
+
                     </div>
+                    <div class="related-posts_card_img">
+                        <a href="<?php the_permalink(); ?>">
+                            
+                       <img src="<?php echo get_field('featured_image'); ?>"/>
+
+                        </a>
+                    </div>
+                  
                 </div> <!-- related-posts_card -->
 
             <?php endwhile; ?>
