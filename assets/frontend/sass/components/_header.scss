@@ -47,7 +47,8 @@ a#arrow-our-work {
         overflow-wrap: break-word;
 
     }
-    .site-header-transparent.site-header .nav.nav-horizontal ul > li > a {
+
+    .site-header-transparent.site-header .nav.nav-horizontal ul>li>a {
         font-family: "Roboto Slab";
         font-size: 12px;
         font-weight: bold;
@@ -58,20 +59,116 @@ a#arrow-our-work {
         color: #ffffff;
         text-transform: uppercase;
     }
-  
-    .nav-horizontal .menu-v2 > li:last-child{
+
+    .nav-horizontal .menu-v2>li:last-child {
         border-radius: 8px;
         background-color: #278fdc;
         padding: 15px;
         margin-left: 20px;
     }
 
-    @media only screen and (min-width: 1024px){
+    @media only screen and (min-width: 1024px) {
         // .nav-horizontal .analytica_mega > li > a, .nav-horizontal > ul > li > a {
         //     padding: 0px 20px;
         //     position: relative;
         //     line-height: 30px;
         // }
+    }
+
+}
+
+.header-container {
+
+    a {
+        text-decoration: none;
+    }
+
+    ul {
+        margin: 0px;
+    }
+
+    nav ul {}
+
+    li.menu-item-has-children {
+        background-image: url(http://tapona.test/wp-content/uploads/2019/07/selected-item.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 834px 6px;
+    }
+
+    nav ul li {
+        display: inline-block;
+    }
+
+    nav ul>li a {
+        display: block;
+        letter-spacing: 1px;
+        padding: 0px 8px;
+        padding-bottom: 15px;
+        color: #000;
+        font-weight: bold;
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+
+    nav ul.sub-menu-0 {
+        position: absolute;
+        padding: 0px;
+        padding-top: 0;
+        width: 100%;
+        display: none;
+        z-index: 300;
+        left: 50%;
+    }
+
+    nav ul.sub-menu-0>li {
+        display: inline-block;
+        text-transform: uppercase;
+        vertical-align: top;
+        font-weight: normal;
+        font-size: 13px;
+
+    }
+
+    nav ul.sub-menu-0>li a {
+        font-weight: normal;
+        padding: 0px;
+    }
+
+    nav ul.sub-menu-1>li a {
+        font-weight: normal;
+        font-size: 12px;
+    }
+
+    nav ul>li:hover ul.sub-menu-0 {
+        display: inline-block;
+    }
+
+    nav ul.sub-menu-1 {
+        text-align: left;
+        width: 140px;
+        padding: 20px 30px 40px 0px;
+    }
+
+    nav ul.sub-menu-1 li {
+        display: block;
+        font-size: 12px;
+    }
+
+    nav ul.sub-menu-1 li a {
+        padding: 0px;
+        padding-bottom: 5px;
+        text-transform: none;
+    }
+
+    nav ul.sub-menu-1 li a:hover {
+        padding-left: 15px;
+        text-decoration: none;
+    }
+
+    nav ul>li a:hover {
+        text-decoration: underline;
+        color: #581311;
     }
 
 }
