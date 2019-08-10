@@ -1,9 +1,3 @@
-jQuery(function ($) {
-
-    $(window).ready(function(){
-
-      });
-});
 
 jQuery(function ($) {
 
@@ -24,18 +18,6 @@ jQuery(function ($) {
                   centerMode: true
               }
           },
-          {
-              breakpoint: 768,
-              settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                  dots: false,
-                  arrows: false,
-                  infinite: true,
-                  centerMode: true
-              }
-          }
-
       ]
   });
 
