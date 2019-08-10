@@ -5,21 +5,29 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
  * @package Analytica
- * @since 1.0.0
+ * @since 1.0.0 
  */
+$image = get_field('featured_image');
 
 get_header(); ?>
 
 <div class="single-post">
     <div class="single-post_featured-image">
         <div class="single-post_featured-image_img">
-            <?php the_post_thumbnail('post-featured-image'); ?>
+            <!-- <?php the_post_thumbnail('post-featured-image'); ?> -->
+             <img src="<?php echo $image ?>">
         </div>
 
         <div class="single-post_meta">
             <div class="single-post_meta-content">
                 <div class="blog">
-                    <h1>Blog_</h1>
+                    <?php
+                           $categories = get_the_category();
+                            if ( ! empty( $categories ) ) { ?>
+                            <h1> <?php echo esc_html( $categories[0]->name ); ?> </h1> 
+                            <?php
+                            }
+                        ?>
                     <p><?php the_field('tag_line'); ?></p>
                 </div>
             </div>
