@@ -44,6 +44,3 @@ analytica_structural_wrap( 'site-header', 'close' );
 
 do_action( 'analytica_after_header_primary' );
  ?>
-<div class="scroll-progress">
-	<span class="scroll-progress__bar"></span>
-</div>
