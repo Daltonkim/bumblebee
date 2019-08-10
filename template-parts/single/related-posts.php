@@ -32,7 +32,7 @@
                             <h2 class="story-category"> <?php echo esc_html( $categories[0]->name ); ?> </h2> 
                             <?php
                             }
-                            ?>
+                        ?>
                         </a>
                         <a class="title-related" href="<?php the_permalink(); ?>">
                             <?php the_title(); ?>
