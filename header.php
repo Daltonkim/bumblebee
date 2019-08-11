@@ -85,41 +85,39 @@ analytica_markup( array(
 ) );
 
     do_action( 'analytica_header_before' );
+    $header_image = get_custom_logo();
     ?>
 
 
-    <div id="page" class="hfeed site">
-	<div id="masthead" class="site-header site-header-primary site-header-transparent site-header-left site-header-has-container" role="banner">
+	<div  class="site-header site-header-primary site-header-transparent site-header-left site-header-has-container" role="banner">
     <div class="analytica-container">
     <div class="site-id">
         <div class="site-title-wrapper">
             <div class="site-title">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?><img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a></div>
+                <?php echo  the_custom_logo();?>
+                </a></div>
             </div>
         </div>
-        <header class="header-container">
+        <div class="header-container site-navigation ">
 
-		<nav>
+		<nav class="nav nav-horizontal nav-animation-submenu-left-to-right">
         <button class="menu-trigger show-on-small button" aria-label="Main mobile navigation">
     <span>
         <span></span>
         <span></span>
         <span></span>
     </span>
-</button>            <div class="menu-menu-1-container">  
+</button>             
             <?php
             
 			wp_nav_menu(
 				array(
 					'theme_location' => 'primary',
-					'menu_class'     => 'menu-menu-1',
+					'menu_class'     => 'menu-menu-1, analytica_mega menu dl-menu menu-v2 dl-menu-toggle',
 				)
 			);
             ?>
-            </div>
         </nav><!-- #site-navigation -->
-        </header>
-
         </div>
         </div><!-- #masthead -->
     <div class="scroll-progress">
