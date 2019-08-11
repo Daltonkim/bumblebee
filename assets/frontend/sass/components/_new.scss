@@ -72,7 +72,7 @@
         position: absolute;
         width: 100%;
         left: 20px;
-        text-align: left;
+        text-align: left; 
         padding-right: 108px;
         top: 33%;
     }
@@ -87,6 +87,12 @@
         line-height: normal;
         letter-spacing: normal;
         color: #212121;
+    }
+    @media (max-width: 768px){
+        &__title-text {
+            display: none;
+
+        }
 
     }
 

@@ -387,7 +387,7 @@
                         &_content {
                             background-color: #fff;
                             display: inline-block;
-                            width: 90%;
+                            width: 100%;
                             left: 0;
                             font-size: 24px;
                             font-weight: normal;
@@ -531,7 +531,6 @@
         font-size: 11px !important;
         width: 50%;
         position: relative;
-        white-space: nowrap;
         line-height: 1.3 !important;
 
         &:nth-child(even) {
@@ -542,7 +541,6 @@
 
 a.title-related {
     font-size: 24px !important;
-    white-space: nowrap;
 }
 
 .relatable-topics {
@@ -561,12 +559,16 @@ a.title-related {
     text-transform: uppercase;
 
 }
-
+.related-posts_card_img {
+    height: 360px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
 .relatable-topics p {
     font-size: 11px !important;
     width: 15%;
     position: relative;
-    white-space: nowrap;
     line-height: 1.3 !important;
 }
 

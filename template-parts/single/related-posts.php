@@ -45,14 +45,18 @@
 
 
                     </div>
-                    <div class="related-posts_card_img">
-                        <a href="<?php the_permalink(); ?>">
-                            
-                       <img src="<?php echo get_field('featured_image'); ?>"/>
+                    <?php
+                   $fimage= get_field('featured_image');
+                    
+                    ?>
+                                            <a href="<?php the_permalink(); ?>">
 
-                        </a>
+                    <div class="related-posts_card_img" style="background-image:url('<?php echo $fimage ?>')">
+                            
+
                     </div>
-                  
+                    </a>
+
                 </div> <!-- related-posts_card -->
 
             <?php endwhile; ?>
