@@ -45,7 +45,6 @@ class Frontend {
     function include_files() {
         include('includes/slick.php');
         include('qazana/includes/controls.php');
-        require_once ('includes/cpt/cpt.php');
         require_once ('includes/functions/acf.php');
 
         include('includes/share.php'); //includes share links
