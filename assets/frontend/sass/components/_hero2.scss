@@ -2,49 +2,61 @@
     position: relative;
     text-align: center;
     color: white;
-    background-position: 50%;    background-repeat: no-repeat;
+    background-position: 50%;
+    background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
     padding: 0;
-  background-image:linear-gradient(rgba(0, 0, 0, .5), #1a1a1a),
-  url(https://images.unsplash.com/photo-1460378150801-e2c95cb65a50?crop=entropy&fit=crop&fm=jpg&h=775&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1400);
-
-     &__title {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), #1a1a1a),
+        url(https://images.unsplash.com/photo-1460378150801-e2c95cb65a50?crop=entropy&fit=crop&fm=jpg&h=775&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1400);
+        @media (max-width: 768px) {
+            background-position: center center !important;
+            background-size: cover;
+        }
+        background-color: #4e4e4e;
+        background-blend-mode: overlay;
+    &__title {
         position: relative;
-    font-size: 50px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    font-family: 'Roboto Slab';
-    color: #1c2e3d;
-    text-transform: uppercase;
-    padding-bottom: 19px;
-    background: white;
-    margin-right: 50%;
-    margin-left: 15%;
-    margin-top: 40%;
-    padding-top: 17px;
-      
+        font-size: 50px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        font-family: 'Roboto Slab';
+        color: #1c2e3d;
+        text-transform: uppercase;
+        padding-bottom: 19px;
+        background: white;
+        margin-right: 50%;
+        margin-left: 15%;
+        margin-top: 40%;
+        padding-top: 17px;
+        @media (max-width: 768px) {        
+            margin-right: 10%;
+            font-size: 30px;
+
+        }
+
     }
 }
 
 .scroll-progress {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	height:3px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
     z-index: 999999999;
-	&__bar {
-		display: block;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		width: 0%;
-		background: dodgerblue;
-		transition: width .05s linear;
-	}
+
+    &__bar {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        background: dodgerblue;
+        transition: width .05s linear;
+    }
 }
