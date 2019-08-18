@@ -5,6 +5,10 @@
         width: 100%;
         padding: 20px;
         margin-top: 200px;
+        
+        @media (max-width: 768px) {        
+            margin-top: 0px;
+        }
     }
 
     &__body {
@@ -14,6 +18,13 @@
         box-shadow: 0 25px 34px 0 rgba(0, 0, 0, 0.1);
         margin: 0 auto;
         margin-bottom: 57px;
+        @media (max-width: 768px) {        
+            width: 100%;
+        }
+        @media (max-width: 1024px) and (min-width: 768px) {        
+            width: 44%;
+
+        }
     }
 
     &__image {
@@ -30,6 +41,11 @@
         letter-spacing: normal;
         color: #1c2e3d;
         text-transform: capitalize;
+        @media (max-width: 768px) {     
+            font-size: 20px;
+
+        }
+
     }
 
     &__excerpt p {
@@ -42,6 +58,10 @@
         letter-spacing: normal;
         color: #1d2027;
         margin-top: 28px;
+        @media (max-width: 768px) {     
+            font-size: 15px;
+
+        }
     }
 
     &__permalink-text {
@@ -54,6 +74,10 @@
         text-align: right;
         color: #278fdc;
         text-transform: uppercase;
+        @media (max-width: 768px) {     
+            font-size: 14px;
+
+        }
     }
 
     &__wrapper {
@@ -64,7 +88,6 @@
 
 body {
     font-family: 'HK Grotesk' !important;
-
 }
 
 

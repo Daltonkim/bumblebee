@@ -74,7 +74,9 @@ class Stories extends Widget_Base {
 		
 			 if ( $query->have_posts() ) :
 				while ( $query->have_posts() ) : $query->the_post();
-                $image = get_field('featured_image');?>
+				$image = get_field('featured_image');
+				$excerpt = get_field('excerpt');
+				?>
                 <div class="stories__body">
                         <div class="stories__image" style="background-image: url('<?php echo $image ?>'); background-position:center center;background-size: cover; background-repeat: no-repeat;">
 						</div>
@@ -85,8 +87,7 @@ class Stories extends Widget_Base {
                                 </h1>
                             </div>
                             <div class="stories__excerpt">
-                                    <p>a
-									Lorem Ipsum is simply dummy text of the printing and typesetting…
+                                    <p><?php echo $excerpt ?> ...
 									</p>
                             </div>
                         <a href="<?php the_permalink(); ?>">
