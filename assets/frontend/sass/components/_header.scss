@@ -19,13 +19,19 @@ a#arrow-our-work {
         height: 28px;
         width: 28px;
         margin-left: 15px;
+
+        @media (max-width: 768px) {
+            background-size: 19px 19px;
+            height: 19px;
+            width: 19px;
+        }
     }
 }
 
 @media (min-width: 768px) {
     .site-header-transparent.site-header {
         background-color: rgba(34, 34, 34, 0.76);
-        position:fixed;
+        // position: fixed;
 
     }
 
@@ -58,7 +64,7 @@ a#arrow-our-work {
         letter-spacing: normal;
         color: #ffff;
         text-transform: uppercase;
-        
+
     }
 
     .nav-horizontal .menu-v2>li:last-child {
@@ -108,7 +114,6 @@ a#arrow-our-work {
             display: block;
             padding-left: 0px;
             margin-left: 0px
-
         }
 
     }
@@ -127,6 +132,7 @@ a#arrow-our-work {
         font-stretch: normal;
         line-height: normal;
         letter-spacing: normal;
+
         @media (max-width: 768px) {
             font-weight: normal;
             padding: 15px 10px;
@@ -183,6 +189,7 @@ a#arrow-our-work {
         padding-top: 16px;
         padding-bottom: 9px;
         padding-left: 34px;
+
         @media (max-width: 768px) {
             font-weight: normal;
             font-size: 8px;
@@ -192,6 +199,7 @@ a#arrow-our-work {
     nav ul.sub-menu-1>li a {
         font-weight: normal;
         font-size: 12px;
+
         @media (max-width: 768px) {
             font-size: 8px;
         }
@@ -242,6 +250,7 @@ a#arrow-our-work {
         &:hover {
             color: #fff;
         }
+
         @media (max-width: 768px) {
             border-radius: 0;
             background-color: #278fdc;
@@ -300,7 +309,8 @@ a#arrow-our-work {
         padding: 15px 25px;
     }
 }
-@media (max-width: 1280px) and (min-width: 1280px)  {
+
+@media (max-width: 1280px) and (min-width: 1280px) {
 
     .nav-horizontal .analytica_mega>li>a,
     .nav-horizontal>ul>li>a {
@@ -426,14 +436,15 @@ a#arrow-our-work {
     color: #ffffff;
     text-transform: capitalize;
     filter: grayscale(100%);
+
     @media (max-width: 768px) {
         font-weight: normal;
         font-size: 8px;
     }
-   
+
 }
 
-@media only screen and (max-width: 1023px){
+@media only screen and (max-width: 1023px) {
     button.menu-trigger>span {
         position: relative;
         width: 36px;
@@ -443,13 +454,14 @@ a#arrow-our-work {
         top: 3px;
     }
 }
-@media (min-width: 768px){
+
+@media (min-width: 768px) {
     .site-id {
         position: relative;
         margin-right: auto;
         min-width: 10em;
     }
-    
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -488,23 +500,27 @@ a#arrow-our-work {
 }
 
 
-.site-header-transparent.site-header .page_item_has_children > a:before, .site-header-transparent.site-header .page_item_has_children > a:after, .site-header-transparent.site-header .menu-item-has-children > a:before, .site-header-transparent.site-header .menu-item-has-children > a:after {
+.site-header-transparent.site-header .page_item_has_children>a:before,
+.site-header-transparent.site-header .page_item_has_children>a:after,
+.site-header-transparent.site-header .menu-item-has-children>a:before,
+.site-header-transparent.site-header .menu-item-has-children>a:after {
     background-color: #690000;
     display: none;
+
     @media (max-width: 768px) {
         display: block;
-    
+
     }
 }
 
-@media only screen and (max-width: 1023px){
+@media only screen and (max-width: 1023px) {
     .nav-horizontal li .sub-menu {
         display: none;
         background-color: #278fdc;
     }
 }
 
-@media  (max-width: 1023px) and (min-width: 768px) {
+@media (max-width: 1023px) and (min-width: 768px) {
     .site-header-transparent.site-header .nav.nav-horizontal ul>li>a {
         font-family: "Roboto Slab";
         font-weight: bold;
@@ -514,14 +530,188 @@ a#arrow-our-work {
         letter-spacing: normal;
         color: #000000;
         text-transform: uppercase;
-        
+
     }
 }
+
 img.custom-logo {
     width: 160px;
-    @media (max-width: 768px){
-       
+
+    @media (max-width: 768px) {
+
         width: 60px;
 
     }
+}
+
+
+
+// #Back to Top
+#gototop {
+    position: fixed;
+    right: 30px;
+    bottom: -112px;
+    z-index: 999;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+
+    &.back-to-top--visible {
+        bottom: 30px;
+    }
+
+    a {
+        display: none;
+    }
+
+
+    &:hover .ricon-arrow-top {
+        animation: toTopFromBottom .5s forwards;
+    }
+
+    .cross {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .cross .bloc-h {
+        top: 50%;
+        left: 0;
+        margin-top: -8px;
+        width: 30px;
+        height: 16px;
+    }
+
+    .cross .bloc-v {
+        top: 0;
+        left: 50%;
+        margin-left: -8px;
+        width: 16px;
+        height: 30px;
+    }
+
+    .ricon-arrow-top {
+        position: absolute;
+        top: 0;
+        transition: color .5s ease-in-out;
+
+
+    }
+
+
+}
+
+[id*=give-form] .give-form-title {
+    padding: 0;
+    margin: 0 0 15px;
+    display: none;
+}
+
+[id*=give-form] input {
+    font-size: 16px;
+}
+
+[id*=bg] {
+    @media (max-width: 768px) {
+        background-position: center center !important;
+        background-size: cover;
+    }
+
+}
+
+.give-btn {
+    background: #ededed;
+    border: 1px solid #ccc;
+    color: #333;
+    padding: 10px 60px;
+    cursor: pointer;
+    line-height: 1.2em;
+    font-size: 16px;
+    font-family: "Roboto Slab" !important;
+
+}
+
+div#give_terms {
+    font-size: 17px;
+}
+
+#give-recurring-form h3.give-section-break,
+#give-recurring-form h4.give-section-break,
+#give-recurring-form legend,
+form.give-form h3.give-section-break,
+form.give-form h4.give-section-break,
+form.give-form legend,
+form[id*=give-form] h3.give-section-break,
+form[id*=give-form] h4.give-section-break,
+form[id*=give-form] legend {
+    background-color: transparent;
+    font-size: 1.15em;
+    font-weight: 700;
+    margin: 10px 0 15px;
+    padding: 0 0 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    width: 100%;
+    color: #1976d2;
+    font-family: "Roboto Slab" !important;
+
+}
+
+form[id*=give-form] #give-final-total-wrap .give-donation-total-label {
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+    padding: 0 12px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 18px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    border: 1px solid #ccc;
+    font-family: "HK Grotesk" !important;
+
+}
+
+[id*=give-form].give-fl-form.give-fl-style-give input.give-fl-input,
+[id*=give-form].give-fl-form.give-fl-style-give select.give-fl-select,
+[id*=give-form].give-fl-form.give-fl-style-give textarea.give-fl-textarea {
+    line-height: inherit;
+    padding: 12px;
+    background-color: #fff;
+    font-family: "HK Grotesk";
+}
+
+form[id*=give-form] #give-gateway-radio-list>li input[type=radio] {
+    margin: 10px .25em 0 0;
+    outline: none;
+    width: auto;
+    display: inline;
+}
+
+form[id*=give-form] input[type=checkbox] {
+    margin: 10px .25em 0 0;
+}
+
+form[id*=give-form] #give_terms_agreement label {
+    display: inline-block;
+    font-family: "Roboto Slab" !important;
+
+}
+
+div#give_show_terms {
+    font-family: "Roboto Slab" !important;
+
+}
+
+img.back-top {
+    width: 40px;
+}
+
+.give-submit-button-wrap .give-submit,
+[id^=give-user-login-submit] .give-submit {
+    float: right !important;
+    font-family: "Roboto Slab" !important;
 }
