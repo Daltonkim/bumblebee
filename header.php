@@ -98,7 +98,7 @@ analytica_markup( array(
                 </a></div>
             </div>
         </div>
-        <div class="header-container site-navigation ">
+        <div class="header-container site-navigation style='font-family: 'Roboto Slab''">
 
 		<nav class="nav nav-horizontal nav-animation-submenu-left-to-right">
         <button class="menu-trigger show-on-small button" aria-label="Main mobile navigation">
