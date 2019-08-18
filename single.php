@@ -8,6 +8,10 @@
  * @since 1.0.0 
  */
 $image = get_field('featured_image');
+$author_get = get_field('author');
+$author_picture = get_field('author_pic');
+
+
 
 
 get_header();
@@ -18,8 +22,8 @@ get_header();
         <div class="single-post_featured-image_img">
             <!-- <?php the_post_thumbnail('post-featured-image'); ?> -->
              <img src="<?php echo $image ?>">
-        </div>
-
+        </div> <?php
+?>
         <div class="single-post_meta">
             <div class="single-post_meta-content">
                 <div class="blog">
@@ -104,13 +108,41 @@ get_header();
 
 
         <div class="single-post_content-wrapper">
-        <span class="author-name"><p><?php the_author(); ?></p> | <p>
-                          
-                          <?php echo human_time_diff(get_the_time('U'), current_time('timestamp')).' ago'; ?>
-    
-                        </p></span>
-        <span class="relatable-topics"><p class="posts-relatable"> Related posts </p><div class="line-related"></div> <p class="posts-view"> View All</p></span>
+        <div class="author">
+            <div class="author__pic">
+                <img class="author__avatar" src="<?php echo $author_picture ?>" alt="auth picture"/>
+            </div>
+            <div class="author__names">
+              <p>
+                  by
+               <?php  echo $author_get  ?>
+              </p> 
+              <p>
+              <?php echo human_time_diff(get_the_time('U'), current_time('timestamp')).' ago'; ?>
+              </p> 
+            </div>
+            <div class="author__category">
+              <p>
+              <a href="<?php the_permalink(); ?>">
+                        <?php
+                           $categories = get_the_category();
+                            if ( ! empty( $categories ) ) { ?>
+                            <h2 class="author__story-category"> <?php echo esc_html( $categories[0]->name ); ?> </h2> 
+                            <?php
+                            }
+                        ?>
+              </a>              
+             </p> 
+            </div>
+            <div class="author__share">
+               <?php share_buttons(); ?>
+            </div>
         </div>
+        </div>
+        <div class="single-post_content-wrapper">
+
+        <div class="relatable-topics"><p class="posts-relatable"> Related posts </p><div class="line-related"></div> <p class="posts-view"> View All</p></div>
+                        </div>
     </div>
 </div>
 
