@@ -81,13 +81,17 @@
         text-transform: uppercase;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
         border: solid 1px #278fdc;
-
     }
+
     nav.fixed-header ul li a.active {
-        
-        background:  #278fdc;
-       
+        background: #278fdc;
     }
+}
 
+.nav-up {
 
+    @media (max-width: 768px) {
+        opacity: 0;
+        transition: visibility 0s 2s, opacity 2s linear;
+    }
 }

@@ -59,6 +59,7 @@
                             @media only screen and (max-width: 992px) {
                                 width: 130px;
                                 padding: 43px 0 40px 20px;
+                                display: none;
                             }
 
                             h1 {
@@ -68,7 +69,7 @@
                                 font-family: 'Roboto Slab';
 
                                 @media only screen and (max-width: 992px) {
-                                    font-size: 50.5px;
+                                    font-size: 30.5px;
                                     margin-left: 5px;
                                 }
                             }
@@ -141,6 +142,11 @@
                             margin-top: 20px;
                         }
 
+                        @media only screen and (max-width: 768px) {
+                            max-width: 100%;
+                            margin-top: 0;
+                        }
+
                         p {
                             font-size: 16px;
                             font-weight: normal;
@@ -150,6 +156,8 @@
                             letter-spacing: 1.4px;
                             text-align: justify;
                             color: #1c2e3d;
+                            margin-bottom: 0;
+
                         }
                     }
 
@@ -160,6 +168,10 @@
 
                         @media only screen and (max-width: 1200px) {
                             width: 100%;
+                            margin-bottom: 0;
+                            margin-top: 0;
+
+
                         }
 
                         h1 {
@@ -243,6 +255,8 @@
                                 width: 100%;
                                 margin: 25px 0;
                                 box-shadow: 100px 10px 0px 10px #eeeeee;
+                                padding-left: 0;
+                                padding-right: 0;
                             }
 
                             video {
@@ -480,18 +494,32 @@
     position: relative;
     display: flex;
     margin: 0 auto;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        display: contents;
+    }
+
 }
 
 .single-image_1 {
     position: relative;
     width: 45%;
     margin: 0 auto;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 }
 
 .single-image_2 {
     position: relative;
     width: 45%;
     margin: 0 auto;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 }
 
 .story-category {
@@ -559,12 +587,14 @@ a.title-related {
     text-transform: uppercase;
 
 }
+
 .related-posts_card_img {
     height: 360px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
+
 .relatable-topics p {
     font-size: 11px !important;
     width: 15%;
@@ -584,6 +614,12 @@ a.title-related {
 p.relatable-topics:nth-child(even) {
     text-align: right;
 }
+
 p.posts-view {
     text-align: right !important;
+}
+
+video[poster] {
+    object-fit: cover;
+
 }

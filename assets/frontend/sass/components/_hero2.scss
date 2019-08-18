@@ -2,8 +2,9 @@
     position: relative;
     text-align: center;
     color: white;
-    background-position: 50%;
+    background-position: 50% 0;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -48,6 +49,9 @@
     right: 0;
     height: 3px;
     z-index: 999999999;
+    @media (max-width: 768px) {
+        display: none;
+    }
 
     &__bar {
         display: block;
