@@ -146,9 +146,8 @@
                             max-width: 100%;
                             margin-top: 0;
                         }
-
-                        p {
-                            font-size: 16px;
+                        > ol{
+                            font-size: 18px;
                             font-weight: normal;
                             font-style: normal;
                             font-stretch: normal;
@@ -157,6 +156,69 @@
                             text-align: justify;
                             color: #1c2e3d;
                             margin-bottom: 0;
+                            font-family: "HK Grotesk";
+
+                            @media only screen and (max-width: 768px) {
+                                font-size: 14px;
+                                font-weight: normal;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: 1.88;
+                                letter-spacing: 0.4px;
+                                text-align: justify;
+                                color: #1c2e3d;
+                                margin-bottom: 0;
+                            }
+                        }
+
+                        >ul{
+                            font-size: 18px;
+                            font-weight: normal;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: 1.88;
+                            letter-spacing: 1.4px;
+                            text-align: justify;
+                            color: #1c2e3d;
+                            margin-bottom: 0;
+                            font-family: "HK Grotesk";
+
+                            @media only screen and (max-width: 768px) {
+                                font-size: 14px;
+                                font-weight: normal;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: 1.88;
+                                letter-spacing: 0.4px;
+                                text-align: justify;
+                                color: #1c2e3d;
+                                margin-bottom: 0;
+                            }
+                        }
+
+                        p {
+                            font-size: 18px;
+                            font-weight: normal;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: 1.88;
+                            letter-spacing: 1.4px;
+                            text-align: justify;
+                            color: #1c2e3d;
+                            margin-bottom: 0;
+                            font-family: "HK Grotesk";
+
+                            @media only screen and (max-width: 768px) {
+                                font-size: 14px;
+                                font-weight: normal;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: 1.88;
+                                letter-spacing: 0.4px;
+                                text-align: justify;
+                                color: #1c2e3d;
+                                margin-bottom: 0;
+                            }
 
                         }
                     }
@@ -389,6 +451,23 @@
                         margin: 0 10px;
                     }
 
+                    ul.slick-dots {
+                        position: absolute;
+                        bottom: 10px;
+                        left: 50%;
+                        z-index: 4;
+                        display: inline-block;
+                        padding: 0;
+                        -webkit-transform: translateX(-50%);
+                        -ms-transform: translateX(-50%);
+                        transform: translateX(-50%);
+                        top: 105%;
+
+                        >li a {
+                            font-size: 12px
+                        }
+                    }
+
                     &_card {
                         position: relative;
 
@@ -506,9 +585,11 @@
     position: relative;
     width: 45%;
     margin: 0 auto;
+    padding: 30px 0 29px 0;
 
     @media (max-width: 768px) {
         width: 100%;
+        padding-bottom: 26px;
     }
 }
 
@@ -516,9 +597,10 @@
     position: relative;
     width: 45%;
     margin: 0 auto;
-
+    padding: 30px 0 29px 0;
     @media (max-width: 768px) {
         width: 100%;
+        padding-bottom: 26px;
     }
 }
 

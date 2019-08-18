@@ -72,6 +72,19 @@ a#arrow-our-work {
         background-color: #278fdc;
         padding: 0;
         margin-left: 0;
+
+        @media (max-width: 768px) {
+            color: #ffffff;
+        }
+
+    }
+
+    .nav-horizontal .menu-v2>li:last-child a {
+
+        @media (max-width: 768px) {
+            color: #ffffff;
+        }
+
     }
 
     @media only screen and (min-width: 1024px) {
@@ -83,6 +96,30 @@ a#arrow-our-work {
     }
 
 }
+@media only screen and (min-width: 1024px) {
+li.toolbar a:hover:after {
+    position: absolute;
+    top: -15px;
+    bottom: 0;
+    content: "Our Work";
+    font-size: 8px;
+    left: 0px;
+    background: white;
+    height: 30%;
+    color: black;
+    width: 40%;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 14px;
+}
+
+}
+@media only screen and (min-width: 1024px) {
+    .nav-horizontal .toolbar .menu-v2>li a:hover {
+        display: none
+    }
+}
+
 
 .header-container {
 
@@ -237,9 +274,12 @@ a#arrow-our-work {
     }
 
     .donate-btn nav ul>li a {
-
         color: #fff;
         background-color: #278fdc;
+
+        @media (max-width: 768px) {
+            color: #ffffff;
+        }
     }
 
     li.donate-btn a {
@@ -254,6 +294,8 @@ a#arrow-our-work {
         @media (max-width: 768px) {
             border-radius: 0;
             background-color: #278fdc;
+            color: #ffffff;
+
         }
     }
 }
@@ -635,6 +677,10 @@ img.custom-logo {
 
 div#give_terms {
     font-size: 17px;
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
 }
 
 #give-recurring-form h3.give-section-break,
@@ -656,6 +702,11 @@ form[id*=give-form] legend {
     color: #1976d2;
     font-family: "Roboto Slab" !important;
 
+    @media (max-width: 768px) {
+        font-size: 16px;
+
+    }
+
 }
 
 form[id*=give-form] #give-final-total-wrap .give-donation-total-label {
@@ -673,6 +724,11 @@ form[id*=give-form] #give-final-total-wrap .give-donation-total-label {
     border: 1px solid #ccc;
     font-family: "HK Grotesk" !important;
 
+    @media (max-width: 768px) {
+        font-size: 14px;
+
+    }
+
 }
 
 [id*=give-form].give-fl-form.give-fl-style-give input.give-fl-input,
@@ -689,6 +745,10 @@ form[id*=give-form] #give-gateway-radio-list>li input[type=radio] {
     outline: none;
     width: auto;
     display: inline;
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
 }
 
 form[id*=give-form] input[type=checkbox] {
@@ -699,11 +759,45 @@ form[id*=give-form] #give_terms_agreement label {
     display: inline-block;
     font-family: "Roboto Slab" !important;
 
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+
+}
+
+.give_terms_links {
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+#give-recurring-form .form-row label,
+form.give-form .form-row label,
+form[id*="give-form"] .form-row label {
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+#give_offline_payment_info {
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+.site-header.site-header-primary.site-header-transparent.site-header-left.site-header-has-container {
+    margin-bottom: 20px;
 }
 
 div#give_show_terms {
     font-family: "Roboto Slab" !important;
 
+}
+
+form[id*="give-form"] #give-gateway-radio-list>li label.give-gateway-option {
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
 }
 
 img.back-top {
@@ -715,3 +809,7 @@ img.back-top {
     float: right !important;
     font-family: "Roboto Slab" !important;
 }
+
+// #give-form-334-wrap > button:focus, .menu-trigger:hover, button:hover, .analytica-button:hover, .button:hover, input[type=reset]:hover, input[type=reset]:focus, input#submit:hover, input#submit:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
+//     color: #0274be !important;
+// }
