@@ -4,7 +4,6 @@ jQuery(function ($) {
     scrollTop() >= 300
     Should be equal the the height of the header
     ========================================== */
-    console.log("  " + "works");
 
     $(document).ready(function () {
         var elementOffset = $('.tab-class').offset().top;

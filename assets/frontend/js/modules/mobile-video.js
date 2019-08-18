@@ -10,7 +10,7 @@ jQuery(function ($) {
       responsive: [{
               breakpoint: 992,
               settings: {
-                  slidesToShow: 2,
+                  slidesToShow: 1,
                   slidesToScroll: 1,
                   dots: false,
                   arrows: false,
