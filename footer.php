@@ -37,7 +37,13 @@ if ( ! analytica_is_php_version_compatible() ) {
 
     do_action( 'analytica_after' );
 
-    wp_footer(); 
-    
+    wp_footer(); ?>
+    <div class="scroll-to-top">  
+        <div id="gototop">    
+        <span class="ricon-arrow-top">
+            </span><img class="back-top" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/frontend/images/arrow-up.png" alt="scroll to top">
+        </div>
+    </div>
+    <?php
     ?></body>
 </html>

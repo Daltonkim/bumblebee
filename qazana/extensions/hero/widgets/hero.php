@@ -144,7 +144,7 @@ class Hero extends Widget_Base {
 			<!-- <img src="<?php echo $image['url'];?>"alt="testimonial ngo" style="width:100%;"> -->
 			<div class="hero__title"><?php echo $title ?></div>
 			<div class="hero__text"><?php echo $text ?></div>
-			<a href="#">
+			<a href="#beauty" class="down">
 			<div class="hero__arrow arrow bounce"><img src="<?php echo $arrow['url'];?>"alt="testimonial ngo" style="width:3%;"> </div>
 			</a>
 		</div>
