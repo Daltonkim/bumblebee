@@ -9,7 +9,9 @@
  */
 $image = get_field('featured_image');
 
-get_header(); ?>
+
+get_header();
+ ?>
 
 <div class="single-post">
     <div class="single-post_featured-image">
@@ -34,7 +36,7 @@ get_header(); ?>
 
             <div class="single-post_meta-content">
                 <div class="date">
-                 
+                  
                 </div>
             </div>
         </div>
@@ -115,3 +117,4 @@ get_header(); ?>
 <?php get_template_part('template-parts/single/related-posts'); ?>
 
 <?php get_footer(); ?>
+
